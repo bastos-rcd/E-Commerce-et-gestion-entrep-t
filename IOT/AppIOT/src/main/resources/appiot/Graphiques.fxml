@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="745.0" styleClass="background" stylesheets="@config.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appiot.GraphiquesController">
+   <children>
+      <VBox alignment="CENTER" layoutY="44.0" prefHeight="698.0" prefWidth="745.0" spacing="20.0">
+         <children>
+            <LineChart fx:id="tempChart" legendVisible="false" prefHeight="242.0" prefWidth="746.0" title="Température">
+               <xAxis>
+                   <NumberAxis autoRanging="false" label="Temps(du plus récent au moins recent)" lowerBound="0" minorTickCount="10" side="BOTTOM" tickLabelGap="2.0" tickUnit="10.0" upperBound="100" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis autoRanging="false" label="°C" lowerBound="0.0" prefHeight="93.0" prefWidth="39.0" side="LEFT" tickLabelGap="2.0" upperBound="50.0" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="humChart" legendVisible="false" prefHeight="248.0" prefWidth="746.0" title="Taux d'humidité">
+               <xAxis>
+                  <NumberAxis autoRanging="false" label="Temps(du plus récent au moins recent)" lowerBound="0" minorTickCount="10" side="BOTTOM" tickLabelGap="2.0" tickUnit="10.0" upperBound="100" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis autoRanging="false" label="\%" minorTickCount="4" prefHeight="125.0" prefWidth="41.0" side="LEFT" tickLabelGap="2.0" tickUnit="10.0" />
+               </yAxis>
+            </LineChart>
+           <LineChart fx:id="coChart" legendVisible="false" prefHeight="202.0" prefWidth="746.0" title="Taux de CO2">
+               <xAxis>
+                  <NumberAxis autoRanging="false" label="Temps(du plus récent au moins recent)" lowerBound="0" minorTickCount="10" side="BOTTOM" tickLabelGap="2.0" tickUnit="10.0" upperBound="100" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis autoRanging="false" label="ppm" minorTickCount="2" prefHeight="124.0" prefWidth="53.0" side="LEFT" tickLabelGap="2.0" tickUnit="500.0" upperBound="2000.0" />
+               </yAxis>
+             </LineChart>
+         </children>
+      </VBox>
+      <Label layoutX="341.0" layoutY="6.0" text="Graphiques" />
+   </children>
+</AnchorPane>

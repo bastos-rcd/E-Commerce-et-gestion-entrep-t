@@ -1,0 +1,134 @@
+= SAÉ 3.01 2023-2024
+:icons: font
+:models: models
+:experimental:
+:incremental:
+:numbered:
+:toc: macro
+:window: _blank
+:correction!:
+
+// Useful definitions
+:asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
+:icongit: icon:git[]
+:git: http://git-scm.com/[{icongit}]
+:plantuml: https://plantuml.com/fr/[plantUML]
+:vscode: https://code.visualstudio.com/[VS Code]
+
+ifndef::env-github[:icons: font]
+// Specific to GitHub
+ifdef::env-github[]
+:correction:
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+:icongit: Git
+endif::[]
+
+// /!\ A MODIFIER !!!
+:baseURL: https://github.com/IUT-Blagnac/sae3-01-template
+
+// Tags
+image:{baseURL}/actions/workflows/blank.yml/badge.svg[Bidon] 
+image:{baseURL}/actions/workflows/build.yml/badge.svg[Build] 
+image:{baseURL}/actions/workflows/tests.yml/badge.svg[Tests] 
+image:https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg[License: MPL-2.0, link="https://opensource.org/licenses/MPL-2.0"]
+//---------------------------------------------------------------
+
+WARNING: Ce dépôt présente le projet à développer dans le cadre de la SAÉ 3.01 du BUT1 Informatique de l'IUT de Blagnac.
+
+toc::[]
+
+== Equipe
+
+Projet est réalisé par::
+
+- https://github.com/bastos-rcd[Bastien Record : Scrum Master]
+- https://github.com/HugolaLicorne[Hugo Berdinel : Développeur]
+- https://github.com/technox023[Éliot Desportes : Développeur]
+- https://github.com/GuiSamSamTei[Guilherme Sampaio : Développeur]
+- https://github.com/walaedinesekoub[Waleidine Sekoub : Product Owner]
+
+Tuteur/tutrice enseignant(e) de l'équipe::
+- mailto:esther.pendaries@univ-tlse2.fr[EP]
+- mailto:jean-michel.bruel@univ-tlse2.fr[JMB]
+
+== Dépôt
+
+- `.gitignore` => un fichier minimaliste des éléments à ne pas pousser en général sur vos dépôts (utiliser la commande `git add -f` pour forcer l'ajout d'un fichier Jar qui ne bougera plus, pour archive par exemple).
+- `.github` => le répertoire qui contient des éléments de gestion de projet :
+** `workflows` => le repertoire qui contient les actions à lancer à chaque push sur votre repo. 
+*** `blank.yml` => un exemple bidon mais dont vous pourrez vérifier l’exécution correcte (1er tag)
+** `ISSUE_TEMPLATE` => le repertoire qui contient quelques templates pour vos issues.
+*** `us.yml` => Exemple de template pour les User Stories
+*** `bug.yml` => Exemple de template pour les issues de bug report
+- `AppDépôt` => le répertoire qui contient l'application IoT du dépôt
+- `BD` => le répertoire qui contient les scripts de la base de données
+- `Documentation` => le répertoire qui contient les différentes documentations
+- `Web` => le répertoire qui contient les codes du site web
+
+== Réalisations 
+
+- Version courante : https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/releases/tag/6.3[v6.3]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogProduit.pdf[Backlog Produit]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint1.pdf[Backlog Sprint 1]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint2.pdf[Backlog Sprint 2]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint3.pdf[Backlog Sprint 3]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint4.pdf[Backlog Sprint 4]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint5.pdf[Backlog Sprint 5]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint6.pdf[Backlog Sprint 6]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint7.pdf[Backlog Sprint 7]
+
+== Projet Site Web
+
+=== Contexte
+
+Front Maker est une entreprise française implantée à Toulouse et créée en 2018. Spécialisée dans la vente d’appareils reconditionnés de haute qualité, la
+boutique est rapidement devenue le repère des amateurs de technologie à la recherche
+de bonnes affaires.
+
+=== Gestion de projet & Qualité
+
+Le site est accessible depuis l’adresse suivante : http://193.54.227.208/~saephp04
+
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocTech_web.adoc[Documentation Technique]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocUser_web.adoc[Documentation Utilisateur]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Test/Cahier_Tests_Web.adoc[Cahier de Test]
+
+== Projet IoT
+
+=== Contexte
+
+Front Maker possède un entrepôt dont certaines données doivent être contrôlées. Il existe déjà un réseau de capteurs dans les entrepôts, qui récupèrent plusieurs informations sur les caractéristiques de l'air, comme la température, l'humidité ou la concentration en CO². L'entreprise souhaite aussi pour des raisons de sécurité avoir accès aux données de détection de présence récupérées par les capteurs. Un capteur envoit les informations au serveur toutes les 10 minutes.
+
+=== Gestion de projet & Qualité
+
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocTech_iot.adoc[Documentation Technique application Java]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocTech_python.adoc[Documentation Technique application Python]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocUser_iot.adoc[Documentation Utilisateur]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Test/Cahier_Tests_IoT.adoc[Cahier de Test]
+
+== Évaluations hebdomadaires
+
+NOTE: Les notes ci-dessous sont mises à jour directement par les enseignants responsables de la compétence 5.
+
+ifdef::env-github[]
+image:https://docs.google.com/spreadsheets/d/e/2PACX-1vSACcYeKaH_ims3faegSLAFJ9s5_Kd9Fbyi4ODEb8BTN5OnUXWenVGhlVPo84yQDhTkTj3f9nXiluh1/pubchart?oid=1097914647&format=image[link=https://docs.google.com/spreadsheets/d/e/2PACX-1vSACcYeKaH_ims3faegSLAFJ9s5_Kd9Fbyi4ODEb8BTN5OnUXWenVGhlVPo84yQDhTkTj3f9nXiluh1/pubchart?oid=1097914647&format=image]
+endif::[]
+Sprint 1: TB ! Attention à différencier les 2 projets IOT et DEV pour plus de clareté (rattacher 2 projets au repository).  Attention pas d'activité de Waleidine depuis 7 jours !! Je n'ai rien trouvé sur les tests non plus.
+
+Sprint 2 : Il manque toujours la partie test.  Waleidine s'est réveillé.
+
+Sprint 3 : J'ai un lien vers un fichier test mais peu implémenté ... le site avance je dois avoir les tests unitaires au moins !  Pensez dés que possible à mettre un lien vers un site opérationnel.  Dans la release pas mal de pages créées mais pas de tests associés ni d'avancement de doc!  Attention dans le dernier sprint j'ai des tâches non raccordées à des US !
+
+Sprint 4 / Dans les backlogs de sprint j'ai des US sans finalité. Le cahier de test est encore à la traine dommage car TB par ailleurs ...Certaines tâches ne sont toujours pas raccordées à des US (ex. Gerer les infos de paiement)
+
+S5: Pensez à préciser le nom du client dans le titre des docs. Tests toujours au point mort c'est dommage. Je n'ai pas le backlog du prochain sprint. C'est le dernier retour avant la fin du projet.
+ifndef::env-github[]
+++++
+<iframe width="786" height="430" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR653IOTEDovCXjU49qczSZDmK5SBuM43GbpvTrhGCCSAqzpwCdRXU3ey5Y_IRRac1qUnt-iFlPxS5k/pubchart?oid=1950296416&format=interactive"></iframe>
+++++
+endif::[]

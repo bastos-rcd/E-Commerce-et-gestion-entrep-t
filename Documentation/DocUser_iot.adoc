@@ -1,0 +1,75 @@
+= Documentation Utilisateur application IoT
+:toc:
+:toc-title: Sommaire
+
+Version de l'application : 6 +
+Date : 10/01/2024 +
+Equipe : 1B-4 +
+Client : Front Maker +
+Projet : Gestion entrepôt + 
+
+<<<
+
+== 1. Description du Projet
+=== a) Equipe
+
+Scrum Master : https://github.com/bastos-rcd[Bastien Record] +
+Product Owner : https://github.com/walaedinesekoub[Waleidine Sekoub] +
+Développeurs : https://github.com/HugolaLicorne[Hugo Berdinel], https://github.com/technox023[Éliot Desportes], https://github.com/GuiSamSamTei[Guilherme Sampaio] +
+
+=== b) Contexte du projet
+
+Dans le cadre de notre site de e-commerce, nous allons devoir gérer des stocks. Ces stocks vont être dans des entrepots. nous allons avoir besoin de nous assurer que les conditions atmosphériques de stockage sont correctes. Pour cela, nous allons utiliser des capteurs pour mesurer la température, l’humidité, la qualité de l’air.
+
+=== c) Objectifs du projet
+
+L'objectif de ce projet est de créer une application en Java et Python, qui permettra de configurer les données que l'on veut consulter, qui se connectera au serveur et récupèrera les données voulues, et affichera ces données de façon lisible pour l'utilisateur. On aura donc une partie IHM en Java qui créera le fichier de configuration des données, puis la partie Python fera la connexion et écrira les données dans un autre fichier. Enfin, Java lira ces données et les affichera sur l'IHM.
+
+== 2. Installer l'application
+=== a) Prérequis
+
+Afin de pouvoir correctement lancer l'application, il est nécessaire d'être sous Ubuntu et d'avoir installé Java et Python3 sur sa machine ainsi que le package mqtt.
+
+Pour installer le package mqtt (Ubuntu) : exécutez la commande "snap install mqtt-explorer"
+
+Pour lancer l'application, il est aussi requis que le fichier contenant le programme python et l'exécutable de l'application soient positionnés dans le même répertoire.
+
+Une fois l'environnement conforme aux instruction ci-dessus, vous pouvez passer au lancement de l'application.
+
+=== b) Lancement
+
+Pour lancer l'application, vous devez dans un premier temps ouvrir deux terminals. L'un va servir à lancer le programme python, l'autre l'application Java.
+
+Positionnez-vous dans le répertoire où sont stockés le programme python et l'exécutable.
+
+Dans le premier terminal : exécuter la commande "java -jar nomFichierExécutable" puis suivez l'étape de configuration expliquée dans la partie 3).
+
+Une fois avoir validé la configuration, dans le second terminal : exécuter la commande "python3 nomDuFichierPython".
+
+Une fois cela fait, le programme python va récupérer les données et les transmettre à l'application, il ne vous reste plus qu'à attendre.
+
+== 3. Utilisation de l'application
+
+=== a) Configuration
+
+Avant de récupérer les données, il faut configurer plusieurs choses sur l'interface afin de définir les capteurs et le type de données concernés. En lançant l'application une interface de configuration va donc s'afficher : +
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/ConfigInterface.png[]
+
+* Le champ *Nom du fichier* correspond aux nom du fichier qui contiendra la configuration que doit appliqué le python (Par défaut: Config). +
+* Le champ *Adresse Serveur* correspond à l'adresse du serveur sur lequel on veut se connecter (Par défaut: chirpstack.iut-blagnac.fr). +
+* Le champ *Port* correspond à l'identifiant de l'application sur laquelle se trouve les capteurs (Par défaut: 1883). +
+* Le champ *Salles* correspond à l'identifiant du capteur dont on veut récupérer les données, si on veut tous les capteurs de l'application il faut mettre "Tous".Sinon, séléctionner la salle parmis la listes de salles ou entrer manuellement votre salle. + 
+* Le champ *Port* correspond à l'identifiant de l'application sur laquelle se trouve les capteurs (Par défaut: 1883). +
+* *Fréquence* en minutes correspond au temps qu'il se découlera au minimum entre chaque affichage de nouvelles données. Peut etres saisie manuellement. +
+* Les cases *Humidité, Temp, CO2* correspond aux données que vous souhaitez récupérer, vous devez en choisir au moins une. +
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/SeuilConfig.png[]
+* Lorsqu'on valide le formulaire, il est demandé de définir le seuil maximal des données sélectionnées précédemment. +
+
+
+Si tout est valide, l'utilisateur peut cliquer sur le button "ok" aprés renseignement du/des seuil maxiaml qui sauvegarde les configurations et affiche la seconde page.
+
+
+
+

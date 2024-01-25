@@ -1,0 +1,154 @@
+= Cahier de Tests - Application IoT
+:toc:
+:toc-title: Sommaire
+
+Version de l'application : 6 +
+Date : 11/01/2024 +
+Equipe : 1B-4 +
+Client : Front Market +
+Projet : Gestion entrepôt + 
+
+<<<
+
+== 1. Description du Projet
+=== a) Equipe
+
+Scrum Master : https://github.com/bastos-rcd[Bastien Record] +
+Product Owner : https://github.com/walaedinesekoub[Waleidine Sekoub] +
+Développeurs : https://github.com/HugolaLicorne[Hugo Berdinel], https://github.com/technox023[Éliot Desportes], https://github.com/GuiSamSamTei[Guilherme Sampaio] +
+
+=== b) Contexte du projet
+
+Dans le cadre de notre site de e-commerce, nous allons devoir gérer des stocks. Ces stocks vont être dans des entrepots. nous allons avoir besoin de nous assurer que les conditions atmosphériques de stockage sont correctes. Pour cela, nous allons utiliser des capteurs pour mesurer la température, l’humidité, la qualité de l’air.
+
+=== c) Objectifs du projet
+
+L’objectif de ce projet est de créer une application en Java et Python, qui permettra de configurer les données que l’on veut consulter, qui se connectera au serveur et récupèrera les données voulues, et affichera ces données de façon lisible pour l’utilisateur. On aura donc une partie IHM en Java qui créera le fichier de configuration des données, puis la partie Python fera la connexion et écrira les données dans un autre fichier. Enfin, Java lira ces données et les affichera sur l’IHM.
+
+== 2. Test des fonctionnalités techniques
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Java
+>|Objectif 4+| Écrire la configuration nécessaire dans le fichier de configuration
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.1 ^|Cliquer sur le bouton "Valider". ^|La fenêtre de configuration se ferme et le Json soit créer. ^|Remplir le formulaire de configuration ^|OK
+5+|
+
+|====
+
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Python
+>|Objectif 4+| Lecture du fichier de configuration (en Json)
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.2 ^|Cliquer sur le bouton "Valider". ^|Ouverture et récupération du contenu en bas niveau, variable contenant le json exploitable. ^|Fichier `config.json` correctement créé dans le même répertoire avec droit de lecture ^|OK
+5+|
+
+|====
+
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Python
+>|Objectif 4+| Connexion au bus MQTT 
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.3 ^|Cliquer sur le bouton "Valider". ^|Connexion au bus effectué au serveur et aux capteurs demandés dans le fichier de configuration. ^|Avoir le droit de se connecter au serveur du fichier de configuration ^|OK
+5+|
+
+|====
+
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Python
+>|Objectif 4+| Récupération des données des capteurs 
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.4 ^|Cliquer sur le bouton "Valider". ^|Les données demandées dans le fichier de configuration sont bien récupérées et exploitables. ^| Capteurs actifs dans le réseau ^|OK
+5+|
+
+|====
+
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Python
+>|Objectif 4+| Gestion du temps de rafraichissement 
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.5 ^|Cliquer sur le bouton "Valider". ^|Signal d'alarme du temps converti en secondes après chaque réception de message. ^| Avoir mis un temps raisonnable en minutes (entre 1 et 10) dans le fichier de configuration. ^|OK
+5+|
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+| Lancement du Java
+>|Objectif 4+| Affichage de la page de visualisation
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.6 ^|Cliquer sur le bouton "Valider". ^|Page visible pas encore visible tant que les données ne sont pas encores lu et affichage de celles-ci aprés reçus. ^| Avoir bien remplis les champs ^|OK
+5+|
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Java
+>|Objectif 4+| Affichage en fonction du choix du type de données
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.7 ^|Cliquer sur le bouton "Valider". ^|Seul les champs correspondants au type de données choisis sont affichés, les autres ne sont pas visibles. ^| Avoir bien remplis les champs ^|OK
+5+|
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Java
+>|Objectif 4+| Affichage des Graphiques
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.8 ^|Cliquer sur le bouton "Graphique". ^|Affichages des graphiques selons les données présent dans "Visualisation". ^| Avoir des données dans visualisation ^|OK
+5+|
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Java
+>|Objectif 4+| Rafraichissement des données dans Visualisation
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.9 ^|Aucune Action. ^|Affichages des graphiques selons les données présent dans "Visualisation". ^| Avoir des données dans visualisation ^|OK
+5+|
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-05-01-01
+>|Titre 4+|Lancement du Java
+>|Objectif 4+| Affichages Alertes des seuils
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|E_C.10 ^|Aucune Action. ^|Affichages de toutes les alertes de seuils dépassé. ^| Avoir configurer un seuil facilemment atteignable ^|OK
+5+|
+
+|====
+
+

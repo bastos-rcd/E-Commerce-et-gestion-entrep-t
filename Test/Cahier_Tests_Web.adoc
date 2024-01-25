@@ -1,0 +1,59 @@
+= Cahier de Tests - Site web
+:toc:
+:toc-title: Sommaire
+
+Version du site : 6 +
+Date : 11/01/2024 +
+Equipe : 1B-4 +
+Client : Front Market +
+Projet : Site Web e-commerce + 
+
+<<<
+
+== 1. Description du Projet
+=== a) Equipe
+
+Scrum Master : https://github.com/bastos-rcd[Bastien Record] +
+Product Owner : https://github.com/walaedinesekoub[Waleidine Sekoub] +
+Développeurs : https://github.com/HugolaLicorne[Hugo Berdinel], https://github.com/technox023[Éliot Desportes], https://github.com/GuiSamSamTei[Guilherme Sampaio] +
+
+=== b) Contexte du projet
+
+Front Market est une entreprise spécialisée dans la distribution de produits électroniques reconditionnés. Notre mission est de rendre la technologie accessible à tous, en offrant une gamme diversifiée de produits électroniques de bonne qualité, le tout à des tarifs abordables. Chez Front Market, nous pensons fermement que la technologie doit être accessible au grand public.
+
+=== c) Objectifs du projet
+
+L’objectif est de créer un site web en accord avec la charte graphique de l’entreprise, qui proposera des produits reconditionnés. Front Market et ses produits s’adressent à tout type de clients, aussi bien pour des usages professionnels ou particuliers.
+
+== 2. Test des fonctionnalités implémentées
+
+=== Sprint 5
+
+|===
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|CD1 ^|Cliquer sur le bouton "Découvrir" ^|Renvoie sur la page boutique différente de la page d'acueille ^| Aucune ^| OK
+^|CN1 ^|Cliquer sur le bouton "Nouveautés" ^|Renvoie sur la page boutique avec les produits triés par ordre des plus récents ajoutés ^| Aucune ^| OK
+^|CN2 ^|Cliquer sur le bouton "Nos meilleures ventes" ^|Renvoie sur la page boutique avec les produit triés par ordre des mieux notés ^| Aucune ^| OK
+^|NC1 ^|Naviguer à travers les "Catégories" ^|Renvoie sur la page boutique en affichant les produits de la catégorie choisie ^| Aucune ^| OK
+^|CF1 ^|Cliquer sur le bouton "Front Market" ^|Renvoie sur la page d'accueil du site ^| Aucune ^| OK
+^|CP1 ^|Cliquer sur un produit ^|Renvoie sur la page du produit demandé ^| Aucune ^| OK
+^|CA1 ^|Cliquer sur le bouton "Ajouter au panier" ^|Ajoute le produit au panier ^| Être connecté ^| OK
+^|NP1 ^|Naviguer à travers les options de personnalisation ^|Change la couleur ou l'état du produit ^| Aucune ^| OK
+^|CM1 ^|Cliquer sur le bouton MAIL ^|Renvoie sur l'application mail par défaut et crée un nouveau mail ^| Aucune ^| OK
+^|CI1 ^|Cliquer sur le bouton INSTAGRAM ^|Renvoie sur la page Instagram de Frontmarket  ^| Aucune ^| OK
+^|CY1 ^|Cliquer sur le bouton YOUTUBE ^|Renvoie sur la page Youtube de Frontmarket  ^| Aucune ^| OK
+^|CT1 ^|Cliquer sur le bouton PHONE ^|Renvoie sur une application téléphone par défaut avec le numéro  ^| Aucune ^| OK
+^|CM2 ^|Cliquer sur le bouton "Mon Compte" ^|Renvoie sur la page de création de compte ou de connexion ^| Ne pas être connecté ^| OK
+^|CS1 ^|Cliquer sur le bouton "S'inscrire" ^|Crée un compte à l'utilisateur ^| Avoir rempli le formulaire d'inscription ^| OK
+^|CS2 ^|Cliquer sur le bouton "Se connecter" ^|Connecte l'utilisateur à son compte  ^| Avoir rentré les bons identifiants ^| OK
+^|CM3 ^|Cliquer sur le bouton "Mon Compte" ^|Renvoie sur la page de consultation des informations du compte ^|Être connecté ^| OK
+^|CC1 ^|Cliquer sur le bouton "Consulter mes commandes" ^|Renvoie sur la page d'historique des commandes de l'utilisateur ^|Être connecté ^| OK
+^|CP2 ^|Cliquer sur le bouton "Panier" ^|Renvoie sur la page panier pour visualiser les produits qui ont été ajoutés ^|Être connecté ^| OK
+^|CD1 ^|Cliquer sur le bouton "Déconnexion" ^|Déconnecte l'utilisateur ^|Être connecté ^| OK
+^|CE1 ^|Cliquer sur le bouton "Envoyer" ^|Permet d'envoyer un avis sous un produit ^|Être connecté, avoir écrit un commentaire et une note et ne pas avoir laissé d'avis avant ^| OK
+^|CA2 ^|Cliquer sur le bouton "Ajouter un produit" ^|Renvoie sur la page d'ajout de produit ^|Être connecté en tant qu'administrateur ^| OK
+^|CA3 ^|Cliquer sur le bouton "Ajouter Produit" ^|Permet d'ajouter un produit dans la base de données ^|Être connecté en tant qu'administrateur et avoir rempli correctement le formulaire ^| OK
+^|CG1 ^|Cliquer sur le bouton "Gestion de produit" ^|Renvoie sur la page récapitulatif des produits du site ^|Être connecté en tant qu'administrateur ^| OK
+^|CG2 ^|Cliquer sur le bouton "Gestion des clients" ^|Renvoie sur la page récapitulatif des comptes clients du site ^|Être connecté en tant qu'administrateur ^| OK
+^|CS3 ^|Cliquer sur le bouton Supprimer ^|Supprime un compte client de la base de données ^|Être connecté en tant qu'administrateur ^| OK
+|===

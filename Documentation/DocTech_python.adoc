@@ -1,0 +1,126 @@
+= Documentation Technique application Python
+:toc:
+:toc-title: Sommaire
+
+Version de l'application : 4 +
+Date : 10/01/2024 +
+Equipe : 1B-4 +
+Client : Front Maker +
+Projet : Gestion entrepôt +
+
+<<<
+
+== 1. Structure du code
+=== a) Fichiers
+
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/IOT/IOT.py[IOT.py]
+- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/IOT/config.ini[config.ini]
+
+=== b) Fonctionnement
+
+
+La partie Python du projet IOT (https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/IOT/IOT.py[IOT.py]) est la responsable de la récupération des données de capteurs sur le bus MQTT, soit des salles désirées, soit de toutes les salles. Après récupération, le programme va stocker les informations voulues (humidité, température et/ou CO2) dans un fichier .json dans lequel les informations seront sauvegardées en fonction des salles et chaque mesure (humidité, température, CO2), est représentée sous forme de liste contenant les 10 dernières valeurs récupérées dans chaque salle. Cette information sera lue par la partie Java pour être affichée à l'utilisateur. 
+
+
+
+
+
+== 2. Étapes d'installation
+=== a) Prérequis
+
+==== a1) Avoir Python 
+
+Le programme étant codé en Python, il est évidemment nécesaire d'installer Python sur votre ordinateur.
+Pour cela, vous pouvez l'installer avec la suivante commande:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/InstalPython.png[]
+
+==== a2) Avoir Paho-MQTT
+
+Le programme Python utilise la librairie paho-mqtt pour se connecter aux bus MQTT afin de récupérer les messages, mais cette librairie ne vient pas avec python, il faut donc l'installer si vous l'avez pas encore fait avec:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/Installation.png[]
+
+
+=== b) Installation
+
+Pour faire tourner le programme, il vous faudra de télécharger le https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/IOT/IOT.py[programme Python] et le https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/IOT/config.ini[fichier de configuration]. Ces deux fichiers doivent se trouver dans le même dossier.
+
+
+== 3. Lancement du Script (Tests)
+
+==== i) Fichiers JSON
+Le programme Python utilise les fichiers JSON pour stocker les informations du bus MQTT. L'utilisateur pouvant choisir le nom du fichier, c'est très probable que le programme Python finisse par créer lui-même ce fichier. 
+
+Aperçu du dossier avant lancement du code:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/PreLancement.png[]
+
+Aperçu du dossier après lancement du code:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/PostLancement.png[]
+
+On remarque que les fichiers JSON ont été créés.
+
+==== j) Connexion
+
+Vérifions le comportement habituel du programme lors de la connexion au bus MQTT:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/ConnexionReussie.png[]
+
+Une contrainte technique lors du développement de programmes ou applications qui est souvent laissée de côté est le traitement des erreurs. Voyons donc ce qui se passe lorsqu'on fait que le programme rencontre une erreur.
+
+On modifie le fichier de configuration pour que l'adresse n'existe pas:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/ConfigErreur.png[]
+
+Si un problème survient lors de la connexion au serveur, On affichera un message d'erreur et on arrêtera le programme.
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/ErreurCMD.png[]
+
+==== k) Sélection de données
+
+L'utilisateur doit aussi pouvoir choisir quelles données il veut récupérer. Pour cela, le fichier de configuration dira au programme qu'est-ce qu'il faut récupérer:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/ConfigParam.png[]
+
+Ce qui fait que le fichier JSON contienne uniquement les données recherchées, évitant de stocker des informations non désirées par l'utilisateur.
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/JSONHumidity.png[]
+
+Pour changer dire qu'on veut récupérer la température, par exemple, on saisit "true" dans le champ temperature:
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/ConfigParam2.png[]
+
+Les suivantes récupérations seront stockées avec l'humidité et la température
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/JSONHumTemp.png[]
+
+==== l) Fichiers JSON déjà existants
+
+Si les fichiers JSON existaient déjà et qu'ils contiennent déjà des données, on n'y touchera pas puisqu'on veut conserver les données déjà existantes.
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/JSONConcat.png[]
+
+==== m) Information non définie
+
+Si jamais un message arrive dans notre bus MQTT ne répondant pas au format spécifique du réseau, donc invalide, une "salle" sera créée: la salle undefined, qui sera invisible pour l'utilisateur lorsqu'il utilisera son interface.
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/Undefined.png[]
+
+==== n) Limites
+
+Afin d'afficher la moyenne des 10 dernières valeurs, il nous faut stocker et puisqu'on n'a pas besoin de la 1º valeur lorsque la 11º valeur arrive, il nous faut effacer la première. Si beaucoup de données arrivent en même temps (100 messages pour le même capteur), seules les 10 dernières seront stockées.
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/Max10.png[]
+
+==== o) Alertes
+
+De même, l'utilisateur définit un seuil de CO2, humidité et température à partir duquel il veut être averti si ces seuils sont dépassés.
+Une alerte est enregistrée pour une information même si l'information associée n'est pas demandée.
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/Alert1.png[]
+
+Cependant, on ne gardera que les dix dernières alertes.
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/Alert10.png[]

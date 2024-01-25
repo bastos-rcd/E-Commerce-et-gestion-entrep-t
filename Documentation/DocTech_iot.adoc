@@ -1,0 +1,94 @@
+= Documentation Technique application IoT
+:toc:
+:toc-title: Sommaire
+
+Version de l'application : 6.0 +
+Date : 11/01/2024 +
+Equipe : 1B-4 +
+Client : Front Maker +
+Projet : Gestion entrepôt +
+
+<<<
+
+== 1. Description du Projet
+=== a) Equipe
+
+Scrum Master : https://github.com/bastos-rcd[Bastien Record] +
+Product Owner : https://github.com/walaedinesekoub[Waleidine Sekoub] +
+Développeurs : https://github.com/HugolaLicorne[Hugo Berdinel], https://github.com/technox023[Éliot Desportes], https://github.com/GuiSamSamTei[Guilherme Sampaio] +
+
+=== b) Contexte du projet
+
+Dans le cadre de la SAE 3.01, notre équipe a pour mission de concevoir une application (IHM) permettant de visualiser les données récupérées au moyen d'un programme en python. Cette application doit permettre de visualiser les données et faire en sorte que celles-ci s'actualisent en temps réel. 
+
+=== c) Objectifs du projet
+
+- Faire la conception de l'interface (choix des classes, etc...)
+- Développer l'interface utilisateur
+- Développer les classes faisant le lien avec les données récupérées par python
+- Finaliser l'application pour un rendu de qualité
+
+== 2. Architecture
+
+=== a) Architecture Générale
+
+Le projet comporte une architecture relativement simple notamment due à des problèmes de chemin d'accès rencontrés. Ainsi, toutes les classes sont dans un même package. Nous avons sacrifié une organisation lisible au dépend d'une application efficace et fonctionnelle. Cependant, nous pouvons retrouver parmi ces classes deux catégories : les classes JavaFX qui permettent de gérer l'application Java (contrôleurs et fenêtres) et les autres classes qui permettent d'assurer le formatage et la transmission des données à l'application.
+
+=== b) Diagramme de l'architecture
+
+- `AppIOT` => le projet regroupant l'ensemble des ressources relatives au Java.
+** `main/java/appiot` => le package regroupant les classes Java du projet.
+** `main/java/resources` => le package regroupant les ressources FXML et le css de l'application.
+
+
+=== c) Ressources externes
+
+Référez-vous à la https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocUser_iot.adoc[documentation utilisateur] pour connaître les différentes fonctionnalités du point de vue de l'utilisateur. 
+
+=== d) Arborescence du code source
+
+L'arborescence du code source est la suivante : 
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/arborescence.png[]
+
+=== e) Diagramme de classe de l'application Java
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/DCJAVA.png[]
+
+== 3. Fonctionnalités
+
+L'application que nous avons développer permet tout d'abord de sélectionner ses préférences au niveau des données récupérées. Dans le code suivant, chaque attribut correspond à une des options de la page de configuration :
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/champs.png[]
+
+ainsi l'utilisateur peut filtrer les données qu'il veut recevoir :
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/config.png[]
+
+Une fois que l'utilisateur appuie sur valider, le code suivant s'exécute : 
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/a.png[]
+
+Tout d'abord une série de vérification est effectuée sur les valeurs entrées dans le fichier de configuration par l'utilisateur. Si ces valeurs sont conformes, la fenêtre permettant d'afficher les données est ouverte avec le code suivant : 
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/fenetredonnee.png[]
+
+on a donc notre fenêtre affichant les données en temps réel : 
+
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/donnees.png[]
+
+ainsi que la fenêtre d'alerte : 
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/alerte.png[]
++image fenetre alertes
+
+Ainsi, l'utilisateur peut visualiser les données et les alertes simultanément dans deux fenêtres différentes.
+
+Si l'utilisateur le souhaite, il a la possibilité de représenter les données actuellement présentes sur la fenêtre sous forme de graphiques. Il lui suffit d'appuyer sur le bouton graphiques, et une nouvelle fenêtre est ouverte : 
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/graphiques.png[]
+
+Cette fenêtre s'ouvre alors : 
+
+image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/fenetregraph.png[]

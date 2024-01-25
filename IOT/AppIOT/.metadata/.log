@@ -1,0 +1,2019 @@
+!SESSION 2023-12-04 14:53:02.895 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-04 14:53:05.305
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-12-04 14:53:23.733
+!MESSAGE Logback config file: /media/etudiant/1234-5678/R3.04 Qualité/sae-3-01-devapp-g1b-4/IOT/AppIOT/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-12-04 14:53:25.595
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-12-04 14:53:25.595
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:02.478
+!MESSAGE Connection to https://download.eclipse.org/efxclipse/updates-released/3.8.0/site/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:02.806
+!MESSAGE Connection to https://download.eclipse.org/eclipse/updates/4.29/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:03.132
+!MESSAGE Connection to https://download.eclipse.org/justj/epp/release/latest/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:03.458
+!MESSAGE Connection to https://download.eclipse.org/releases/2023-09/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:03.783
+!MESSAGE Connection to https://download.eclipse.org/technology/m2e/releases/latest/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:05.286
+!MESSAGE Connection to https://download.eclipse.org/efxclipse/updates-released/3.8.0/site/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:05.609
+!MESSAGE Connection to https://download.eclipse.org/eclipse/updates/4.29/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:05.933
+!MESSAGE Connection to https://download.eclipse.org/justj/epp/release/latest/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:06.257
+!MESSAGE Connection to https://download.eclipse.org/releases/2023-09/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:06.603
+!MESSAGE Connection to https://download.eclipse.org/technology/m2e/releases/latest/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2023-12-04 14:54:09.231
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2023-12-04 14:54:09.231
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-12-04 14:54:09.231
+!MESSAGE Software being installed: e(fx)clipse - IDE 3.8.0.202204150904 (org.eclipse.fx.ide.feature.feature.group 3.8.0.202204150904)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-12-04 14:54:09.231
+!MESSAGE Missing requirement: e(fx)clipse - IDE 3.8.0.202204150904 (org.eclipse.fx.ide.feature.feature.group 3.8.0.202204150904) requires 'org.eclipse.equinox.p2.iu; org.eclipse.fx.ide.basic.feature.feature.group [3.8.0.202204150904,3.8.0.202204150904]' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2023-12-04 14:54:09.355
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2023-12-04 14:54:09.355
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-12-04 14:54:09.355
+!MESSAGE Software being installed: e(fx)clipse - IDE 3.8.0.202204150904 (org.eclipse.fx.ide.feature.feature.group 3.8.0.202204150904)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-12-04 14:54:09.355
+!MESSAGE Missing requirement: e(fx)clipse - IDE 3.8.0.202204150904 (org.eclipse.fx.ide.feature.feature.group 3.8.0.202204150904) requires 'org.eclipse.equinox.p2.iu; org.eclipse.fx.ide.basic.feature.feature.group [3.8.0.202204150904,3.8.0.202204150904]' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-12-04 14:54:34.439
+!MESSAGE Connection to https://marketplace.eclipse.org/catalogs/api/p failed on marketplace.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2023-12-04 14:55:11.290
+!MESSAGE Cannot open Eclipse Marketplace
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot install remote marketplace locations: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.createConfiguration(AbstractMarketplaceWizardCommand.java:105)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.createConfiguration(MarketplaceWizardCommand.java:64)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:67)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:300)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+Caused by: org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/catalogs/api/p: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.runtime.CoreException: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:112)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	... 5 more
+	Suppressed: org.eclipse.core.runtime.CoreException: Unknown Host: https://marketplace.eclipse.org/catalogs/api/p
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:221)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: java.net.UnknownHostException: marketplace.eclipse.org
+		at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+		at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+		at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+		at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+		at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+		at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+		at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+		at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+		at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+		at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+		at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 7 more
+Contains: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2023-12-04 14:55:11.294
+!MESSAGE Cannot install remote marketplace locations: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/catalogs/api/p: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.runtime.CoreException: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:112)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	... 5 more
+	Suppressed: org.eclipse.core.runtime.CoreException: Unknown Host: https://marketplace.eclipse.org/catalogs/api/p
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:221)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: java.net.UnknownHostException: marketplace.eclipse.org
+		at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+		at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+		at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+		at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+		at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+		at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+		at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+		at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+		at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+		at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+		at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 7 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2023-12-04 14:55:11.295
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/catalogs/api/p: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:112)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+	Suppressed: org.eclipse.core.runtime.CoreException: Unknown Host: https://marketplace.eclipse.org/catalogs/api/p
+		at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:221)
+		at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:278)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:37)
+		at org.eclipse.epp.internal.mpc.core.util.TransportFactory.lambda$0(TransportFactory.java:421)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:130)
+		at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:91)
+		... 6 more
+	Caused by: java.net.UnknownHostException: marketplace.eclipse.org
+		at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+		at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+		at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+		at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+		at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+		at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+		at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+		at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+		at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+		at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+		at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+		at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+		at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+		at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+		at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+		at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+		at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 7 more
+Contains: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 4 0 2023-12-04 14:55:11.295
+!MESSAGE Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 4 org.eclipse.epp.mpc.core 4 0 2023-12-04 14:55:11.296
+!MESSAGE Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2023-12-04 14:55:11.296
+!MESSAGE Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org: Échec temporaire dans la résolution du nom
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:164)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui 4 0 2023-12-04 14:55:19.402
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4899)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.graphics.Image.init(Image.java:1219)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:209)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.GradientCanvas.onPaint(GradientCanvas.java:168)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.GradientCanvas.lambda$0(GradientCanvas.java:81)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Control.gtk_draw(Control.java:3928)
+	at org.eclipse.swt.widgets.Scrollable.gtk_draw(Scrollable.java:365)
+	at org.eclipse.swt.widgets.Composite.gtk_draw(Composite.java:506)
+	at org.eclipse.swt.widgets.Canvas.gtk_draw(Canvas.java:174)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2482)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6884)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6163)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1597)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.browser.WebKit$Webkit2AsyncToSync.execAsyncAndWaitForReturn(WebKit.java:1282)
+	at org.eclipse.swt.browser.WebKit$Webkit2AsyncToSync.runjavascript(WebKit.java:1030)
+	at org.eclipse.swt.browser.WebKit$Webkit2AsyncToSync.evaluate(WebKit.java:1000)
+	at org.eclipse.swt.browser.WebKit.evaluate(WebKit.java:1299)
+	at org.eclipse.swt.browser.WebKit.close(WebKit.java:865)
+	at org.eclipse.swt.browser.WebKit.onDispose(WebKit.java:1792)
+	at org.eclipse.swt.browser.WebKit.lambda$4(WebKit.java:768)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1534)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1337)
+	at org.eclipse.swt.widgets.Control.release(Control.java:4804)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:543)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.computeBrowserAvailable(AbstractMarketplaceDiscoveryItem.java:521)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.createInfoLink(AbstractMarketplaceDiscoveryItem.java:394)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.createDescription(AbstractMarketplaceDiscoveryItem.java:341)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.createContent(AbstractMarketplaceDiscoveryItem.java:241)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.createContent(AbstractMarketplaceDiscoveryItem.java:203)
+	at org.eclipse.epp.internal.mpc.ui.wizards.DiscoveryItem.createContent(DiscoveryItem.java:123)
+	at org.eclipse.epp.internal.mpc.ui.wizards.AbstractMarketplaceDiscoveryItem.<init>(AbstractMarketplaceDiscoveryItem.java:168)
+	at org.eclipse.epp.internal.mpc.ui.wizards.DiscoveryItem.<init>(DiscoveryItem.java:102)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.createDiscoveryItem(MarketplaceViewer.java:501)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.doCreateViewerItem(MarketplaceViewer.java:435)
+	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer$3.doCreateItem(CatalogViewer.java:344)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.ControlListViewer.createNewItem(ControlListViewer.java:244)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.ControlListViewer.refreshAll(ControlListViewer.java:486)
+	at org.eclipse.equinox.internal.p2.ui.discovery.util.ControlListViewer.inputChanged(ControlListViewer.java:358)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1647)
+	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer.catalogUpdated(CatalogViewer.java:250)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.access$3(MarketplaceViewer.java:1)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$1(MarketplaceViewer.java:377)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.runUpdate(MarketplaceViewer.java:772)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.catalogUpdated(MarketplaceViewer.java:376)
+	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer.updateCatalog(CatalogViewer.java:589)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.updateCatalog(MarketplaceViewer.java:1049)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplacePage.safeUpdateCatalog(MarketplacePage.java:810)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplacePage.lambda$4(MarketplacePage.java:798)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.openWizardDialog(AbstractMarketplaceWizardCommand.java:146)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:73)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:300)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2023-12-04 15:55:31.234
+!MESSAGE Failed to stream using org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport@bac9721 - falling back to org.eclipse.epp.internal.mpc.core.util.TransportFactory$$Lambda$1214/0x0000000100d5cdb8@56ee543: Request execution failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Request execution failed
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:112)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.client5.http.impl.classic.RequestFailedException: Request execution failed
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:128)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	... 3 more
+Caused by: org.apache.hc.core5.util.DeadlineTimeoutException: Deadline: 2023-12-04T14:58:29.828+0100, -3420951 MILLISECONDS overdue
+	at org.apache.hc.core5.util.DeadlineTimeoutException.from(DeadlineTimeoutException.java:49)
+	at org.apache.hc.core5.pool.StrictConnPool.processPendingRequest(StrictConnPool.java:318)
+	at org.apache.hc.core5.pool.StrictConnPool.processNextPendingRequest(StrictConnPool.java:299)
+	at org.apache.hc.core5.pool.StrictConnPool.release(StrictConnPool.java:261)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.release(PoolingHttpClientConnectionManager.java:366)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.releaseEndpoint(InternalExecRuntime.java:254)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.releaseConnection(ResponseEntityProxy.java:80)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.eofDetected(ResponseEntityProxy.java:117)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.checkEOF(EofSensorInputStream.java:199)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:136)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	... 1 more
+Contains: Request execution failed
+org.apache.hc.client5.http.impl.classic.RequestFailedException: Request execution failed
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:128)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.core5.util.DeadlineTimeoutException: Deadline: 2023-12-04T14:58:29.828+0100, -3420951 MILLISECONDS overdue
+	at org.apache.hc.core5.util.DeadlineTimeoutException.from(DeadlineTimeoutException.java:49)
+	at org.apache.hc.core5.pool.StrictConnPool.processPendingRequest(StrictConnPool.java:318)
+	at org.apache.hc.core5.pool.StrictConnPool.processNextPendingRequest(StrictConnPool.java:299)
+	at org.apache.hc.core5.pool.StrictConnPool.release(StrictConnPool.java:261)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.release(PoolingHttpClientConnectionManager.java:366)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.releaseEndpoint(InternalExecRuntime.java:254)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.releaseConnection(ResponseEntityProxy.java:80)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.eofDetected(ResponseEntityProxy.java:117)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.checkEOF(EofSensorInputStream.java:199)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:136)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	... 1 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2023-12-04 15:55:31.234
+!MESSAGE Request execution failed
+!STACK 0
+org.apache.hc.client5.http.impl.classic.RequestFailedException: Request execution failed
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:128)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.core5.util.DeadlineTimeoutException: Deadline: 2023-12-04T14:58:29.828+0100, -3420951 MILLISECONDS overdue
+	at org.apache.hc.core5.util.DeadlineTimeoutException.from(DeadlineTimeoutException.java:49)
+	at org.apache.hc.core5.pool.StrictConnPool.processPendingRequest(StrictConnPool.java:318)
+	at org.apache.hc.core5.pool.StrictConnPool.processNextPendingRequest(StrictConnPool.java:299)
+	at org.apache.hc.core5.pool.StrictConnPool.release(StrictConnPool.java:261)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.release(PoolingHttpClientConnectionManager.java:366)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.releaseEndpoint(InternalExecRuntime.java:254)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.releaseConnection(ResponseEntityProxy.java:80)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.eofDetected(ResponseEntityProxy.java:117)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.checkEOF(EofSensorInputStream.java:199)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:136)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	... 1 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2023-12-04 15:55:31.234
+!MESSAGE Request execution failed
+!STACK 0
+org.apache.hc.client5.http.impl.classic.RequestFailedException: Request execution failed
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:128)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.core5.util.DeadlineTimeoutException: Deadline: 2023-12-04T14:58:29.828+0100, -3420951 MILLISECONDS overdue
+	at org.apache.hc.core5.util.DeadlineTimeoutException.from(DeadlineTimeoutException.java:49)
+	at org.apache.hc.core5.pool.StrictConnPool.processPendingRequest(StrictConnPool.java:318)
+	at org.apache.hc.core5.pool.StrictConnPool.processNextPendingRequest(StrictConnPool.java:299)
+	at org.apache.hc.core5.pool.StrictConnPool.release(StrictConnPool.java:261)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.release(PoolingHttpClientConnectionManager.java:366)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.releaseEndpoint(InternalExecRuntime.java:254)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.releaseConnection(ResponseEntityProxy.java:80)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.eofDetected(ResponseEntityProxy.java:117)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.checkEOF(EofSensorInputStream.java:199)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:136)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	... 1 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2023-12-04 15:55:31.234
+!MESSAGE Request execution failed
+!STACK 0
+org.apache.hc.client5.http.impl.classic.RequestFailedException: Request execution failed
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:128)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.core5.util.DeadlineTimeoutException: Deadline: 2023-12-04T14:58:29.828+0100, -3420951 MILLISECONDS overdue
+	at org.apache.hc.core5.util.DeadlineTimeoutException.from(DeadlineTimeoutException.java:49)
+	at org.apache.hc.core5.pool.StrictConnPool.processPendingRequest(StrictConnPool.java:318)
+	at org.apache.hc.core5.pool.StrictConnPool.processNextPendingRequest(StrictConnPool.java:299)
+	at org.apache.hc.core5.pool.StrictConnPool.release(StrictConnPool.java:261)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.release(PoolingHttpClientConnectionManager.java:366)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.releaseEndpoint(InternalExecRuntime.java:254)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.releaseConnection(ResponseEntityProxy.java:80)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.eofDetected(ResponseEntityProxy.java:117)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.checkEOF(EofSensorInputStream.java:199)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:136)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	... 1 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2023-12-04 15:55:31.234
+!MESSAGE Request execution failed
+!STACK 0
+org.apache.hc.client5.http.impl.classic.RequestFailedException: Request execution failed
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:128)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:87)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientService.execute(HttpClientService.java:79)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:45)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:97)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:74)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.core5.util.DeadlineTimeoutException: Deadline: 2023-12-04T14:58:29.828+0100, -3420951 MILLISECONDS overdue
+	at org.apache.hc.core5.util.DeadlineTimeoutException.from(DeadlineTimeoutException.java:49)
+	at org.apache.hc.core5.pool.StrictConnPool.processPendingRequest(StrictConnPool.java:318)
+	at org.apache.hc.core5.pool.StrictConnPool.processNextPendingRequest(StrictConnPool.java:299)
+	at org.apache.hc.core5.pool.StrictConnPool.release(StrictConnPool.java:261)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.release(PoolingHttpClientConnectionManager.java:366)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.releaseEndpoint(InternalExecRuntime.java:254)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.releaseConnection(ResponseEntityProxy.java:80)
+	at org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.eofDetected(ResponseEntityProxy.java:117)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.checkEOF(EofSensorInputStream.java:199)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:136)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	... 1 more
+
+!ENTRY org.eclipse.epp.mpc.ui 2 0 2023-12-04 15:55:31.350
+!MESSAGE Failed to download resource for entry 'Jubula Automated Functional Testing - Standalone Version' (70120) from https://marketplace.eclipse.org/sites/default/files/styles/badge_logo/public/jubula_logo_edited-2_1.png?itok=vHf1Vkg-
+!STACK 0
+java.io.IOException: Pipe closed
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:307)
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:377)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$1.read(FileReader.java:334)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 2 0 2023-12-04 15:55:31.454
+!MESSAGE Failed to download resource for entry 'Jubula Automated Functional Testing Feature 7.0' (70112) from https://marketplace.eclipse.org/sites/default/files/styles/badge_logo/public/jubula_logo_edited-2_0.png?itok=TeqKoocc
+!STACK 0
+java.io.IOException: Pipe closed
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:307)
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:377)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$1.read(FileReader.java:334)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 2 0 2023-12-04 15:55:31.558
+!MESSAGE Failed to download resource for entry 'ImageJ Plugin 1.54.b5' (3103502) from https://marketplace.eclipse.org/sites/default/files/styles/medium/public/screen1.png?itok=FLqyzqw8
+!STACK 0
+java.io.IOException: Pipe closed
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:307)
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:377)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$1.read(FileReader.java:334)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 2 0 2023-12-04 15:55:31.662
+!MESSAGE Failed to download resource for entry 'EntireJ 5.1.10' (867720) from https://marketplace.eclipse.org/sites/default/files/styles/medium/public/ScreenShotEditor.png?itok=qSs5hsHW
+!STACK 0
+java.io.IOException: Pipe closed
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:307)
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:377)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$1.read(FileReader.java:334)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.lambda$0(ResourceProvider.java:95)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$ResourceFuture.retrieve(ResourceProvider.java:149)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.127
+!MESSAGE An internal error occurred during: "Install download1".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:145)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2023-12-04 15:57:06.231
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2023-12-04 15:57:06.231
+!MESSAGE session context was:(profile=epp.package.java, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.231
+!MESSAGE Failed to transfer artifact canonical: osgi.bundle,io.github.classgraph,4.8.149.v20220915-0556.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.231
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.231
+!MESSAGE Unable to read repository at https://download.eclipse.org/releases/2023-09/202309131000/plugins/io.github.classgraph_4.8.149.v20220915-0556.jar.
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:253)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:332)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:467)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1513)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1484)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.read(SessionInputBufferImpl.java:195)
+	at org.apache.hc.core5.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:173)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:135)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:180)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.231
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/io.github.classgraph_4.8.149.v20220915-0556.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.231
+!MESSAGE Failed to transfer artifact canonical: osgi.bundle,org.eclipse.emf.mwe2.language.ui.source,2.15.0.v20230826-1559.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.231
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.231
+!MESSAGE Unable to read repository at https://mirror.aarnet.edu.au/pub/eclipse/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.language.ui.source_2.15.0.v20230826-1559.jar.
+!STACK 0
+java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:257)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.232
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.language.ui.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.232
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Error while reading from repository: https://ftp.fau.de/eclipse/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.language.ui.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.232
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.language.ui.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.language.ui.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.232
+!MESSAGE Failed to transfer artifact canonical: org.eclipse.update.feature,org.eclipse.emf.mwe2.launcher,2.15.0.v20230826-1559.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.232
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Unable to read repository at https://mirror.aarnet.edu.au/pub/eclipse/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher_2.15.0.v20230826-1559.jar.
+!STACK 0
+java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:257)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.232
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.232
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Error while reading from repository: https://mirrors.dotsrc.org/eclipse//releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.232
+!MESSAGE Failed to transfer artifact canonical: org.eclipse.update.feature,org.eclipse.emf.mwe2.launcher.source,2.15.0.v20230826-1559.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.232
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.232
+!MESSAGE Unable to read repository at https://mirrors.dotsrc.org/eclipse//releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher.source_2.15.0.v20230826-1559.jar.
+!STACK 0
+java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:257)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.233
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://ftp.fau.de/eclipse/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.233
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2023-12-04 15:57:06.233
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://ftp.halifax.rwth-aachen.de/eclipse/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.launcher.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.lib_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.lib.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.runtime_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.emf.mwe2.runtime.sdk_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.emf.mwe2.runtime.source_2.15.0.v20230826-1559.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.gef_3.15.0.202308311129.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.core_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.core.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.doc_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.examples_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.ide_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.ide.common_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.ide.common.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.ide.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.lib_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.xtend.lib_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.lib.macro_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.233
+!MESSAGE Error while reading from repository: https://ftp.linux.org.tr/eclipse//releases/2023-09/202309131000/plugins/org.eclipse.xtend.lib.macro.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.lib.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.m2e_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.m2e.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.xtend.sdk_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.standalone_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtend.standalone.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.activities_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.activities.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.builder_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.builder.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.builder.standalone_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.builder.standalone.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.buildship_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.buildship.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.edit_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.edit.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://mirror.dkm.cz/eclipse/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.shared_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.shared.jdt38_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.shared.jdt38.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.shared.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.234
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.ui_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.common.types.ui.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.doc_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.xtext.docs_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ecore_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ecore.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.xtext.examples_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ide_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ide.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.java_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.java.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.junit4_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.junit4.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.logging_1.2.24.v20230827-1316.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.logging.source_1.2.24.v20230827-1316.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.m2e_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.m2e.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.purexbase_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.purexbase.ide_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.purexbase.ide.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.purexbase.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.purexbase.ui_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.purexbase.ui.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.xtext.redist_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.xtext.runtime_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://rhlx01.hs-esslingen.de/pub/Mirrors/eclipse/releases/2023-09/202309131000/features/org.eclipse.xtext.sdk_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.smap_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.smap.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.testing_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.testing.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codemining_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.235
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codemining.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codetemplates_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codetemplates.ide_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codetemplates.ide.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codetemplates.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codetemplates.ui_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.codetemplates.ui.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.ecore_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.ecore.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/features/org.eclipse.xtext.ui_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.shared,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-12-04 15:57:06.236
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2023-09/202309131000/plugins/org.eclipse.xtext.ui.shared.source_2.32.0.v20230827-1315.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.testing,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.ui.testing.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.util,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.util.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xbase,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ide,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ide.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.junit,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.junit.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xbase.lib,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.lib.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.testing,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.testing.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.testing,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.236
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xbase.ui.testing.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.generator,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.generator.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ide,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ide.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.examples,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.graph,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.xtext.xtext.ui.graph,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.graph.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.ui.source,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.wizard,2.32.0.v20230827-1315
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-12-04 15:57:06.237
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.xtext.xtext.wizard.source,2.32.0.v20230827-1315
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.355
+!MESSAGE An internal error occurred during: "Install download2".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.458
+!MESSAGE An internal error occurred during: "Install download1".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.570
+!MESSAGE An internal error occurred during: "Install download3".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.674
+!MESSAGE An internal error occurred during: "Install download0".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.779
+!MESSAGE An internal error occurred during: "Install download3".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:145)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.882
+!MESSAGE An internal error occurred during: "Install download0".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:145)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-12-04 15:57:06.986
+!MESSAGE An internal error occurred during: "Install download2".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getRetrieveFileTransferFactory()" because the return value of "org.eclipse.equinox.internal.p2.transport.ecf.Activator.getDefault()" is null
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:430)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:145)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

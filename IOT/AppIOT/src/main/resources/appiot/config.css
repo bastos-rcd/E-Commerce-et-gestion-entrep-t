@@ -1,0 +1,109 @@
+*{
+	-fx-font : 13px "Berlin Sans FB";
+	-fx-text-fill: #7a7aff;
+}
+
+.background{
+	-fx-background-color: #ccccff;
+	-fx-overflow-y: auto;
+}
+
+.check-box .box{
+	-fx-background-color: white;
+	-fx-border-color: #cc99ff;
+	-fx-border-radius:3px
+}
+
+.check-box:selected .box{
+	-fx-background-color: #cc99ff;
+}
+
+.check-box:selected .mark{
+	-fx-background-color: white;
+}
+
+.list-view{
+	-fx-background-color: #ccccff;
+	-fx-cell-background-color: white;
+	-fx-border-color: #a3a3ff; 
+    -fx-border-width: 3px;     
+    -fx-border-radius: 5px;  
+}
+
+.list-view:focused{
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;  
+}
+
+.list-view .scroll-bar .thumb:pressed{
+	-fx-background-color: #a3a3ff;
+}
+
+.list-view .scroll-bar:vertical,
+.list-view .scroll-bar:vertical .increment-button .increment-arrow,
+.list-view .scroll-bar:vertical .decrement-button .decrement-arrow {
+	
+    -fx-background-color: #ccccff;
+    -fx-font-size: 15px;
+}
+
+.list-view .scroll-bar:vertical .increment-button .increment-arrow,
+.list-view .scroll-bar:vertical .decrement-button .decrement-arrow {
+    -fx-border-color: white;
+}
+
+.list-view .scroll-bar:vertical .increment-button:hover,
+.list-view .scroll-bar:vertical .decrement-button:hover {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .increment-button .increment-arrow:pressed,
+.list-view .scroll-bar:vertical .decrement-button .decrement-arrow:pressed {
+    -fx-border-color: #a3a3ff;
+}
+
+.list-cell:filled:selected{
+	-fx-background-color: #ccccff;
+}
+
+.list-cell .caret{
+	-fx-background-color: #ccccff;
+}
+
+.button:hover{
+	-fx-background-color: #cc99ff;
+}
+
+.button:focused {
+    -fx-background-insets: 0, 0, 1, 2;
+    -fx-border-color: transparent;
+}
+
+.slider .thumb{
+    -fx-background-insets: 0, 0, 1, 2;
+    -fx-border-color: transparent;
+}
+
+
+.slider .thumb:hover{
+	-fx-background-insets: 0, 0, 1, 2;
+    -fx-border-color: transparent;
+}
+
+
+.slider .thumb:pressed{
+	-fx-background-insets: 0, 0, 1, 2;
+    -fx-border-color: transparent;
+    -fx-background-color: #ccccff;
+}
+
+.text-field{
+	-fx-background-insets: 0, 0, 1, 2;
+    -fx-border-color: transparent;
+    -fx-prompt-text-fill: #7a7aff;
+}
+
+.error{
+	-fx-border-color: red;
+	-fx-prompt-text-fill: orange;
+}

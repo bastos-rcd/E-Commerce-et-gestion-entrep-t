@@ -1,0 +1,1169 @@
+html {
+    background-color: #182148;
+    scroll-behavior: smooth;
+}
+
+/* header.php */
+
+header {
+    background-color: #1B244D;
+    display: table;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.ban {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ban>a>#logo {
+    width: 60%;
+}
+
+#user {
+    margin-left: -20px;
+}
+
+.ban>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    color: #FFCC57;
+    margin-right: 15%;
+}
+
+/* header.php Compte : Menu Déroulant */
+
+.ban>nav>ul {
+    list-style-type: none;
+}
+
+.ban>nav>ul>li>ul {
+    list-style-type: none;
+}
+
+.ban>nav>ul>li {
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.ban>nav>ul>li>ul>li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ban>nav>ul>li>ul>li>a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFCC57;
+}
+
+.ban .menu-deroulant {
+    display: none;
+    background-color: #212d5b;
+    position: absolute;
+    right: -350%;
+    width: max-content;
+    z-index: 1000;
+    padding-left: 3%;
+    border-left: #141b37;
+    border-top: #141b37;
+    border-right: #2c3a75;
+    border-bottom: #2c3a75;
+    border-style: inset;
+    border-width: 2px;
+}
+
+.ban>nav>ul:hover {
+    cursor: pointer;
+}
+
+.ban>nav>ul:hover .menu-deroulant {
+    display: block;
+}
+
+.menu-deroulant a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.ban .menu-deroulant a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-color: #FFCC57;
+}
+
+/* header.php Bouton */
+
+.trier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-trier {
+    display: flex;
+    width: 25%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-left: #141b37;
+    border-top: #141b37;
+    border-right: #2c3a75;
+    border-bottom: #2c3a75;
+    border-style: inset;
+    border-width: 2px;
+}
+
+.trier>.container-trier>a {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trier>.container-trier>a:hover {
+    color: rgb(198, 159, 68);
+    background-color: #212d5b;
+}
+
+/* header.php Catégories : Menu Déroulant */
+
+.trier>nav {
+    margin-left: 0px;
+    width: 25%;
+    padding-right: 15px;
+}
+
+.trier>nav>.container-trier {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-left: #141b37;
+    border-top: #141b37;
+    border-right: #2c3a75;
+    border-bottom: #2c3a75;
+    border-style: inset;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.trier>nav>.container-trier>a {
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trier>nav>.container-trier>.menu-deroulant {
+    display: none;
+    background-color: #212d5b;
+    position: absolute;
+    top: 105px;
+    right: 6px;
+    width: 21%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    position: fixed;
+    padding-left: 3%;
+    border-left: #141b37;
+    border-top: #141b37;
+    border-right: #2c3a75;
+    border-bottom: #2c3a75;
+    border-style: inset;
+    border-width: 2px;
+    overflow-y: auto;
+    white-space: nowrap;
+    height: 150px;
+}
+
+.container-trier>ul {
+    list-style-type: none;
+}
+
+.container-trier>ul>li>a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: small;
+    color: #FFCC57;
+}
+
+.trier>nav>.container-trier>.menu-deroulant>li {
+    text-align: left;
+}
+
+.trier>nav>.container-trier>.menu-deroulant>li>a {
+    color: aliceblue;
+}
+
+.trier>nav>.container-trier>.menu-deroulant>li>.categ {
+    font-size: medium;
+    font-weight: bold;
+    margin-left: -10%;
+}
+
+.trier>nav>.container-trier>a:hover {
+    background-color: #212d5b;
+    color: rgb(198, 159, 68);
+    cursor: pointer;
+}
+
+.trier>nav:hover .menu-deroulant {
+    display: block;
+}
+
+.menu-deroulant>li>a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+
+/* footer.php */
+
+footer {
+    margin-top: 100px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -10px;
+    background-color: #2a3462;
+    padding-top: 1px;
+}
+
+footer>h1 {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.a-propos {
+    display: flex;
+    flex-direction: row;
+}
+
+.a-propos>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-propos>img {
+    margin-right: 140px;
+    width: 15%;
+    height: 15%;
+}
+
+.a-propos>div>p {
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    width: 90%;
+    text-align: justify;
+}
+
+.a-propos>div>div {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.a-propos>div>div>a {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.a-propos>div>div>a>img {
+    width: 5%;
+    margin-bottom: 1%;
+}
+
+.a-propos>div>div>a>img:hover {
+    transform: scale(1.1);
+}
+
+/* index.php */
+
+.produit-accueil {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.produit-accueil>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.produit-accueil>div {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #212d5b;
+    border-radius: 5px;
+}
+
+.produit-accueil>div>a {
+    text-decoration: none;
+}
+
+.produit {
+    background-color: #2d386b;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.produit>img {
+    width: 70%;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.produit>div {
+    margin-left: 41px;
+    margin-right: 41px;
+}
+
+.produit>div>p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.produit>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#etoile {
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* boutique.php */
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search input[type=search] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: lighter;
+    width: 60%;
+    height: 30px;
+    background: #182148;
+    border-color: aliceblue;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 1%;
+}
+
+.search select {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color: #182148;
+    border-color: aliceblue;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.produit-boutique {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-produit {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.produit-boutique>div>a {
+    text-decoration: none;
+}
+
+.produit-boutique .produit {
+    background-color: #212d5b;
+}
+
+.filtre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.filtre #prix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtre #marque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtre #ordre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtre h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.filtre select {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color: #182148;
+    border-color: aliceblue;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.filtre label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.filtre-form input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-width: 1px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.filtre-form input[type=submit]:hover {
+    cursor: pointer;
+}
+
+/* produit.php */
+
+.produit-unique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #212d5b;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.produit-unique>img {
+    height: 340px;
+    width: 340px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.produit-unique>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.produit-unique>div>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+.produit-unique>div>h3 {
+    margin-top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: normal;
+}
+
+.produit-unique>div>h3>a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: small;
+    text-decoration: none;
+}
+
+.produit-unique>div>img {
+    width: 100px;
+}
+
+.produit-unique hr {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.produit-unique>div>h2 {
+    margin-top: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(22, 105, 22);
+}
+
+.produit-unique input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: large;
+    background-color: #2a3462;
+    border-left: #141b37;
+    border-top: #141b37;
+    border-right: #2c3a75;
+    border-bottom: #2c3a75;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.produit-unique>div>form>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.produit-unique select {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: #182148;
+    border: aliceblue;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.produit-unique>div>h3>:hover {
+    text-decoration: underline;
+}
+
+.produit-unique input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #182148;
+}
+
+.avis {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.avis h2 {
+    margin-left: 10px;
+}
+
+.avis>div {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 10px 0px 10px;
+    border: 1px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+.avis>div>p {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.avis input[type=number] {
+    margin-left: 20px;
+    background-color: #182148;
+    padding: 5px 10px 5px 10px;
+    border: 1px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    color: aliceblue;
+    width: 3%;
+}
+
+.avis textarea {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+    height: 50px;
+    background-color: #182148;
+    padding: 5px 10px 5px 10px;
+    border: 1px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.avis input[type=submit] {
+    margin-left: 20px;
+    background-color: #182148;
+    padding: 5px 10px 5px 10px;
+    border: 1px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+/* connexion.php */
+
+#img-formulaire {
+    width: 20%;
+}
+
+.formulaire {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #212d5b;
+    border-radius: 5px;
+}
+
+#connexion>p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#inscription>p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#connexion>* {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#inscription>* {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.formulaire>form {
+    text-align: center;
+}
+
+.formulaire input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    background: none;
+    border: 2px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+.formulaire input[type=email] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    background: none;
+    border: 2px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+.formulaire input[type=password] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    background: none;
+    border: 2px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+.formulaire input[type=tel] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    background: none;
+    border: 2px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+.formulaire input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    background: none;
+    border: 2px;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+/* panier.php */
+
+.panier {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.panier h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.panier h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.panier table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.panier th,
+.panier td {
+    border: 1px solid #fff;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.panier th {
+    background-color: #212d5b;
+}
+
+.panier tr:nth-child(even) {
+    background-color: #182148;
+}
+
+.panier tr:nth-child(odd) {
+    background-color: #253260;
+}
+
+.panier img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.panier .valider-panier {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: large;
+    width: max-content;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    padding: 5 5 5 5;
+}
+
+.panier .valider-panier:hover {
+    background-color: black;
+}
+
+/* consultationCommande.php */
+
+.commande h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.commande h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.commande table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.commande th,
+.commande td {
+    border: 1px solid #fff;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.commande th {
+    background-color: #212d5b;
+}
+
+.commande tr:nth-child(even) {
+    background-color: #182148;
+}
+
+.commande tr:nth-child(odd) {
+    background-color: #253260;
+}
+
+.commande img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* gestionProduit.php */
+
+.gestion-produit {
+    margin-top: 10%;
+}
+
+.gestion-produit table {
+    border: 2px aliceblue;
+    border-collapse: collapse;
+}
+
+.gestion-produit th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: grey;
+}
+
+.gestion-produit th button {
+    background: none;
+    border: none;
+}
+
+.gestion-produit th img {
+    width: 100%;
+}
+
+.gestion-produit tr {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.gestion-produit tr button {
+    background: none;
+    border: none;
+}
+
+.gestion-produit td img {
+    width: 70%;
+}
+
+.gestion-produit th input[type=number] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    background: none;
+    border: none;
+}
+
+.gestion-produit td input[type=number] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: medium;
+    background: none;
+    border: none;
+}
+
+/* ajouterProduit.php */
+
+.ajouter-produit {
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.ajouter-produit form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ajouter-produit>form>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ajouter-produit>form>div>fieldset {
+    width: 48%;
+}
+
+.ajouter-produit>form>div>div {
+    width: 48%;
+}
+
+.ajouter-produit>form>div>div>fieldset {
+    width: 95%;
+}
+
+.ajouter-produit input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background: none;
+    border: 1px aliceblue;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 98%;
+}
+
+.ajouter-produit input[type=number] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background: none;
+    border: 1px aliceblue;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 98%;
+}
+
+.ajouter-produit input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background: none;
+    border: 1px aliceblue;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 20%;
+}
+
+.ajouter-produit input[type=submit]:hover {
+    background: none;
+    border: 1px aliceblue;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 20%;
+}
+
+.ajouter-produit input[type=file] {
+    background: none;
+    border: 1px aliceblue;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 98%;
+}
+
+.ajouter-produit textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background: none;
+    border: 1px aliceblue;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    height: 35%;
+    width: 98%;
+}
+
+.ajouter-produit select {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background: #182148;
+    background-color: #182148;
+    border: 1px aliceblue;
+    border-color: aliceblue;
+    border-style: groove;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+}
+
+/* produitCompose.php */
+
+.produit-compose form {
+    width: 100%;
+}
+
+.produit-compose>form>div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.produit-compose img {
+    height: 340px;
+    width: 340px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.produit-compose h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: large;
+}
+
+
+.produit-compose hr {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.produit-compose h2 {
+    margin-top: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(22, 105, 22);
+}
+
+.produit-compose input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: large;
+    background-color: #2a3462;
+    border-left: #141b37;
+    border-top: #141b37;
+    border-right: #2c3a75;
+    border-bottom: #2c3a75;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.produit-compose>form>div>div>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.produit-compose select {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: #182148;
+    border: aliceblue;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.produit-compose input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #182148;
+}
