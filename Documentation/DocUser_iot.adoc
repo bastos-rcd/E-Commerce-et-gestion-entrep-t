@@ -54,7 +54,7 @@ Une fois cela fait, le programme python va récupérer les données et les trans
 
 Avant de récupérer les données, il faut configurer plusieurs choses sur l'interface afin de définir les capteurs et le type de données concernés. En lançant l'application une interface de configuration va donc s'afficher : +
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/ConfigInterface.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/ConfigInterface.png[]
 
 * Le champ *Nom du fichier* correspond aux nom du fichier qui contiendra la configuration que doit appliqué le python (Par défaut: Config). +
 * Le champ *Adresse Serveur* correspond à l'adresse du serveur sur lequel on veut se connecter (Par défaut: chirpstack.iut-blagnac.fr). +
@@ -64,7 +64,7 @@ image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Document
 * *Fréquence* en minutes correspond au temps qu'il se découlera au minimum entre chaque affichage de nouvelles données. Peut etres saisie manuellement. +
 * Les cases *Humidité, Temp, CO2* correspond aux données que vous souhaitez récupérer, vous devez en choisir au moins une. +
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/SeuilConfig.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/SeuilConfig.png[]
 * Lorsqu'on valide le formulaire, il est demandé de définir le seuil maximal des données sélectionnées précédemment. +
 
 

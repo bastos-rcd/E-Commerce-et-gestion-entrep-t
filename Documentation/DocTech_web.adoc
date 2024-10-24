@@ -35,7 +35,7 @@ Le code en HTML5, CSS et PHP est herbergé sur un serveur, et la connexion à la
 
 === b) Ressources externes
 
-Réferrez-vous à la https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocUser_web.adoc[documentation utilisateur] pour connaître les différentes fonctionnalités du point de vue de l'utilisateur.
+Réferrez-vous à la https://github.com/bastos-rcd/blob/main/Documentation/DocUser_web.adoc[documentation utilisateur] pour connaître les différentes fonctionnalités du point de vue de l'utilisateur.
 
 === c) Arborescence
 

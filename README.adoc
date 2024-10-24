@@ -73,14 +73,14 @@ Tuteur/tutrice enseignant(e) de l'équipe::
 == Réalisations 
 
 - Version courante : https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/releases/tag/6.3[v6.3]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogProduit.pdf[Backlog Produit]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint1.pdf[Backlog Sprint 1]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint2.pdf[Backlog Sprint 2]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint3.pdf[Backlog Sprint 3]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint4.pdf[Backlog Sprint 4]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint5.pdf[Backlog Sprint 5]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint6.pdf[Backlog Sprint 6]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/BacklogSprint7.pdf[Backlog Sprint 7]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogProduit.pdf[Backlog Produit]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogSprint1.pdf[Backlog Sprint 1]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogSprint2.pdf[Backlog Sprint 2]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogSprint3.pdf[Backlog Sprint 3]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogSprint4.pdf[Backlog Sprint 4]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogSprint5.pdf[Backlog Sprint 5]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogSprint6.pdf[Backlog Sprint 6]
+- https://github.com/bastos-rcd/blob/main/Documentation/BacklogSprint7.pdf[Backlog Sprint 7]
 
 == Projet Site Web
 
@@ -94,9 +94,9 @@ de bonnes affaires.
 
 Le site est accessible depuis l’adresse suivante : http://193.54.227.208/~saephp04
 
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocTech_web.adoc[Documentation Technique]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocUser_web.adoc[Documentation Utilisateur]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Test/Cahier_Tests_Web.adoc[Cahier de Test]
+- https://github.com/bastos-rcd/blob/main/Documentation/DocTech_web.adoc[Documentation Technique]
+- https://github.com/bastos-rcd/blob/main/Documentation/DocUser_web.adoc[Documentation Utilisateur]
+- https://github.com/bastos-rcd/blob/main/Test/Cahier_Tests_Web.adoc[Cahier de Test]
 
 == Projet IoT
 
@@ -106,10 +106,10 @@ Front Maker possède un entrepôt dont certaines données doivent être contrôl
 
 === Gestion de projet & Qualité
 
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocTech_iot.adoc[Documentation Technique application Java]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocTech_python.adoc[Documentation Technique application Python]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocUser_iot.adoc[Documentation Utilisateur]
-- https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Test/Cahier_Tests_IoT.adoc[Cahier de Test]
+- https://github.com/bastos-rcd/blob/main/Documentation/DocTech_iot.adoc[Documentation Technique application Java]
+- https://github.com/bastos-rcd/blob/main/Documentation/DocTech_python.adoc[Documentation Technique application Python]
+- https://github.com/bastos-rcd/blob/main/Documentation/DocUser_iot.adoc[Documentation Utilisateur]
+- https://github.com/bastos-rcd/blob/main/Test/Cahier_Tests_IoT.adoc[Cahier de Test]
 
 == Évaluations hebdomadaires
 

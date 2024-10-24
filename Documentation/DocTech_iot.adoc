@@ -43,52 +43,52 @@ Le projet comporte une architecture relativement simple notamment due à des pro
 
 === c) Ressources externes
 
-Référez-vous à la https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/DocUser_iot.adoc[documentation utilisateur] pour connaître les différentes fonctionnalités du point de vue de l'utilisateur. 
+Référez-vous à la https://github.com/bastos-rcd/blob/main/Documentation/DocUser_iot.adoc[documentation utilisateur] pour connaître les différentes fonctionnalités du point de vue de l'utilisateur. 
 
 === d) Arborescence du code source
 
 L'arborescence du code source est la suivante : 
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/arborescence.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/arborescence.png[]
 
 === e) Diagramme de classe de l'application Java
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/DCJAVA.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/DCJAVA.png[]
 
 == 3. Fonctionnalités
 
 L'application que nous avons développer permet tout d'abord de sélectionner ses préférences au niveau des données récupérées. Dans le code suivant, chaque attribut correspond à une des options de la page de configuration :
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/champs.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/champs.png[]
 
 ainsi l'utilisateur peut filtrer les données qu'il veut recevoir :
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/config.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/config.png[]
 
 Une fois que l'utilisateur appuie sur valider, le code suivant s'exécute : 
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/a.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/a.png[]
 
 Tout d'abord une série de vérification est effectuée sur les valeurs entrées dans le fichier de configuration par l'utilisateur. Si ces valeurs sont conformes, la fenêtre permettant d'afficher les données est ouverte avec le code suivant : 
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/fenetredonnee.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/fenetredonnee.png[]
 
 on a donc notre fenêtre affichant les données en temps réel : 
 
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/donnees.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/donnees.png[]
 
 ainsi que la fenêtre d'alerte : 
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/alerte.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/alerte.png[]
 +image fenetre alertes
 
 Ainsi, l'utilisateur peut visualiser les données et les alertes simultanément dans deux fenêtres différentes.
 
 Si l'utilisateur le souhaite, il a la possibilité de représenter les données actuellement présentes sur la fenêtre sous forme de graphiques. Il lui suffit d'appuyer sur le bouton graphiques, et une nouvelle fenêtre est ouverte : 
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/graphiques.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/graphiques.png[]
 
 Cette fenêtre s'ouvre alors : 
 
-image::https://github.com/IUT-Blagnac/sae-3-01-devapp-g1b-4/blob/master/Documentation/Resources/fenetregraph.png[]
+image::https://github.com/bastos-rcd/blob/main/Documentation/Resources/fenetregraph.png[]
